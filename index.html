@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game-UI-Tabs</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<body>
+<div class="ba-container">
+    <main class="container">
+        <section class="tab">
+            <button class="tab-link tab-link--active">
+                <img class="ba-link__logo" src="assets/img/tooltip.svg" alt="tooltip">
+                information
+            </button>
+            <button class="tab-link">
+                <img class="ba-link__logo" src="assets/img/card.svg" alt="card">
+                ratings info
+            </button>
+            <button class="tab-link">
+                <img class="ba-link__logo" src="assets/img/basket.svg" alt="basket">
+                where to buy
+            </button>
+        </section>
+        <section class="tab-content-section">
+            <div id="information" class="tab-content tab-active">
+                <div class="ba-flex">
+                    <section class="ba-logo">
+                        <img class="ba-cover" src="assets/img/cover.jpg" alt="cover">
+                        <img class="ba-stars" src="assets/img/stars.svg" alt="stars">
+                    </section>
+                    <section class="ba-description">
+                        <header>
+                            <section class="ba-titles-section">
+                                <h1 class="ba-title">FarCry 4</h1><br>
+                                <h3 class="ba-subtitle">First Released Nov 17, 2014</h3>
+                            </section>
+                            <img class="ba-score" src="assets/img/score.png" alt="score">
+                        </header>
+                        <section>
+                            <p class="ba-text">
+                                In Far Cry 4, players find themselves in Kyrat, a breathtaking,
+                                perilous and wild region of the Hima
+                                layas struggling under the regime of a despotic self-appointed king.
+                            </p>
+                        </section>
+                        <footer>
+                            <h4 class="ba-discount">20% off!</h4>
+                            <h3 class="ba-price">$59.96</h3>
+                            <button class="ba-button">buy it now</button>
+                        </footer>
+
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="tab-content-section">
+            <div id="ratings-info" class="tab-content">
+                <p class="ba-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                    aperiam assumenda
+                    dolorem dolorum earum eligendi iste iusto, magnam nemo omnis quae quam quisquam
+                    quos temporibus unde, vitae voluptatem voluptatum. Quidem.
+                </p>
+            </div>
+        </section>
+        <section class="tab-content-section">
+            <div id="where-to-buy" class="tab-content">
+                <p class="ba-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                    aperiam assumenda
+                    dolorem dolorum earum eligendi iste iusto, magnam nemo omnis quae quam quisquam
+                    quos temporibus unde, vitae voluptatem voluptatum. Quidem.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--*****
+    <header class="ba-header-tab">
+        <button class="ba_header_tab__links" onclick="openInformation(event, 'London')">London</button>
+        <button class="ba_header_tab__links" onclick="openInformation(event, 'Paris')">Paris</button>
+        <button class="ba_header_tab__links" onclick="openInformation(event, 'Tokyo')">Tokyo</button>
+    </header>
+    <main class="ba-main">
+        <section id="information" class="ba_tab_content">
+            <h3>information-title</h3>
+            <p>Lorem ipsum dolor sit.</p>
+        </section>
+        <section id="rating-info" class="ba_tab_content">
+            <h3>rating-info-title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </section>
+        <section id="where-to-buy" class="ba_tab_content">
+            <h3>where-to-buy-title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, nulla.</p>
+        </section>
+    </main>
+
+    *****-->
+    <script src="assets/js/script.js"></script>
+</div>
+</body>
+</html>
