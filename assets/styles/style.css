@@ -39,6 +39,7 @@ body {
     outline: none;
     cursor: pointer;
     padding: 14px 16px 35px;
+    margin:0 25px 0;
     transition: 0.3s;
     color: #b7bacd;
     opacity: 0.7;
@@ -144,7 +145,7 @@ body {
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
-
+    margin: 0;
 }
 .ba-price {
     color: #ffffff;
@@ -152,7 +153,7 @@ body {
     font-size: 32px;
     font-weight: 400;
     line-height: 20px;
-
+    margin-top: 8px;
 }
 .ba-button {
     width: 164px;
@@ -167,3 +168,9 @@ body {
     text-transform: uppercase;
     border: none;
 }
+.ba-button:hover {
+    color:#13e28d;
+    background-color: #ffffff;
+}
+
+

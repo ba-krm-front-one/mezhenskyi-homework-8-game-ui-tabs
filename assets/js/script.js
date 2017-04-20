@@ -1,12 +1,12 @@
 (() => {
     function showTab(event) {
         // Declare all variables
-        let tabs, tabLinks;
+        let tabContents, tabLinks;
 
         // Get all elements with class="tabcontent" and hide them
-        tabs = document.querySelectorAll(".tab-content");
-        tabs.forEach(tab => {
-            tab.classList.remove('tab-active');
+        tabContents = document.querySelectorAll(".tab-content");
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('tab-active');
         });
 
         // Get all elements with class="tablinks" and remove the class "active"
@@ -17,9 +17,15 @@
 
         // Show the current tab, and add an "active" class to the button that opened the tab
 
-        let tabContent = this.parentNode.querySelector('.tab-content');
+        /*
+        let tabContent = document.querySelector('tabId');
         tabContent.classList.add('tab-active');
         this.classList.add('tab-link--active');
+        */
+
+        let tabContentSections = document.querySelectorAll('.tab-content-section');
+        let tabContent = tabContentSections.querySelector('.tab-content');
+        this.classList.add('tab-active');
     }
     document.addEventListener('DOMContentLoaded',() => {
         document.querySelectorAll('.tab-link').forEach(tabLink => {
@@ -27,3 +33,4 @@
         });
     });
 })();
+
